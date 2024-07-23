@@ -6,5 +6,6 @@ cp *.pkg.tar.zst ../repo
 cd ../repo
 repo-add polaris.db.tar.gz *.pkg.tar.zst
 cd ..
-git commit "chore-update"
+git add *.*
+git commit -m "chore-update"
 git push
