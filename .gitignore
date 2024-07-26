@@ -1,2 +1,7 @@
 polo
 *.old
+aic94xx-firmware
+ast-firmware
+wd719x-firmware
+upd72020x-fw
+xvkbd
