@@ -40,14 +40,6 @@ git clone https://aur.archlinux.org/xvkbd.git
 cd xvkbd
 makepkg -s --noconfirm
 cp *.pkg.tar.zst ../repo
-cd ..
-
-# eucalyptus-drop
-mkdir temp-eucalyptus
-cp ./PKGBUILD ./temp-eucalyptus
-cd temp-eucalyptus
-makepkg -s --noconfirm
-cp *.pkg.tar.zst ../repo
 cd ../repo
 
 repo-add polaris.db.tar.gz *.pkg.tar.zst
@@ -59,6 +51,5 @@ rm -rf polo
 rm -rf aic94xx-firmware
 rm -rf ast-firmware
 rm -rf wd719x-firmware
-rm -rf temp-eucalyptus
 git commit -m "chore-update" -a
 git push
