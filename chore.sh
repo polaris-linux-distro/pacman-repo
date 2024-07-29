@@ -59,5 +59,6 @@ rm -rf polo
 rm -rf aic94xx-firmware
 rm -rf ast-firmware
 rm -rf wd719x-firmware
+rm -rf temp-eucalyptus
 git commit -m "chore-update" -a
 git push
