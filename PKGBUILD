@@ -4,7 +4,7 @@ pkgrel=1
 pkgdesc="Eucalyptus Drop is a fork of Sugar Candy. Qt6 support included."
 arch=('any')
 license=('GPL3')
-depends=('sddm' 'qt5-graphicaleffects' 'qt5-quickcontrols2' 'qt5-svg')
+depends=('sddm' 'qt5-graphicaleffects' 'qt5-quickcontrols2' 'qt5-svgz' 'qt6-5compat')
 makedepends=('git')
 provides=("sddm-eucalyptus-drop")
 conflicts=("sddm-sugar-candy" "sddm-eucalyptus-drop")
@@ -25,4 +25,5 @@ package() {
   find ./Assets -type f -exec install -Dm644 {} "$pkgdir/usr/share/sddm/themes/eucalyptus-drop/{}" \;
   find ./Backgrounds -type f -exec install -Dm644 {} "$pkgdir/usr/share/sddm/themes/eucalyptus-drop/{}" \;
   find ./Components -type f -exec install -Dm644 {} "$pkgdir/usr/share/sddm/themes/eucalyptus-drop/{}" \;
+  find ./Previews -type f -exec install -Dm644 {} "$pkgdir/usr/share/sddm/themes/eucalyptus-drop/{}" \;
 }
