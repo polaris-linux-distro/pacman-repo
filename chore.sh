@@ -1,3 +1,5 @@
+rm ./repo/*.pkg.tar.zst
+
 # polo
 git clone https://github.com/polaris-linux-distro/polo.git
 cd polo
