@@ -9,5 +9,6 @@ repo-add polaris.db.tar.gz *.pkg.tar.zst
 cd ..
 # ughhh its always my fault innit?
 rm -rf polo
+git add .
 git commit -m "chore-update" -a
 git push
